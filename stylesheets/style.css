@@ -148,7 +148,7 @@ input{
   padding: 20px 0px;
   display: block;
   width: 80%;
-  margin: 20px;
+  margin:20px 20px 0px 20px;
 }
 main{
   width: 100%;
@@ -194,6 +194,7 @@ footer{
   background: white;
   margin: 30px 0 0 0;
  box-shadow: 0px -23px 8px -29px #5b5e6d;
+ font-size: 0.8rem;
 }
 footer div{
   width: 100%;
@@ -266,5 +267,47 @@ footer div:nth-child(2) div i.fa-chevron-down{
   margin: 30px 0px 0px 0px;
 }
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+input {
+  width: 50%;
+  margin: 20px 20px 20px 0px;
+}
+header button, main div button {
+  width: 30%;
+  margin: 20px 0px;
+  padding: 20px 10px;
+}
+main div {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
+main div button.white-btn{
+  width: 60%;
+}
+main div img {
+  width: 35%;
+  margin: 40px;
+}
+footer div:first-child {
+  flex-wrap: nowrap;
+}
+footer div:first-child img {
+  width: 15%;
+  margin-right: 0;
+}
+footer div:first-child ul{
+  width: 19%;
+  padding-left: 2%;
+}
+footer div:nth-child(2) {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+footer div:nth-child(2) div {
+  margin: 0;
+}
 }
